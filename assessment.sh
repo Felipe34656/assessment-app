@@ -1,8 +1,7 @@
 #!/bin/bash
 > assessment.txt
 date >> assessment.txt
-echo
-echo
+
 echo "Informacoes da Distro utilizada $(hostname -i):" >> assessment.txt
 cat /etc/*-release >> assessment.txt
 echo "================================" >> assessment.txt
