@@ -11,14 +11,12 @@ node {
     sh 'echo "Informacoes da Distro utilizada $(hostname -i):" >> assessment.txt'
     }
     stage("Kernel Info"){
-    sh '> assessment.txt'
     sh 'cat /etc/*-release >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "Informacoes do Kernel do Servidor $(hostname -i):" >> assessment.txt'
     }
     stage("Users Info"){
-    sh '> assessment.txt'
     sh 'uname -a >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
@@ -26,7 +24,6 @@ node {
     sh 'cat /etc/passwd | cut -d: -f1 >> assessment.txt'
     }
     stage("Packages Info"){
-    sh '> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "Pacotes instalados no Servidor $(hostname -i):" >> assessment.txt'
