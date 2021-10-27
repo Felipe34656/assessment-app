@@ -25,4 +25,7 @@ node {
     stage("Test"){
         echo "cat /var/jenkins_home/workspace/desafio_pipeline/assessment.txt"
     }
+    stage("Deploy"){
+        echo "Compilacao Finalizada"
+    }
 }
