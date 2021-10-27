@@ -1,6 +1,4 @@
-#!/bin/bash
 node {
-    
     stage("Build"){
     sh 'echo "Iniciando o Building"' 
     }
