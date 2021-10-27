@@ -23,6 +23,6 @@ node {
     sh 'echo "================================" >> assessment.txt'
     }
     stage("Test"){
-        echo "cat assessment.txt"
+        echo "cat /var/jenkins_home/workspace/desafio_pipeline/assessment.txt"
     }
 }
