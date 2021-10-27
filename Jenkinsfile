@@ -24,6 +24,7 @@ node {
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "Lista de Usuarios Presente no Servidor $(hostname -i):" >> assessment.txt'
     sh 'cat /etc/passwd | cut -d: -f1 >> assessment.txt'
+    }
     stage("Packages Info"){
     sh '> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
