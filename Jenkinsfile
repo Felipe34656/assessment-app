@@ -22,4 +22,7 @@ node {
     sh 'echo "================================" >> assessment.txt'
     sh 'echo "================================" >> assessment.txt'
     }
+    stage("Test"){
+        echo "cat assessment.txt"
+    }
 }
